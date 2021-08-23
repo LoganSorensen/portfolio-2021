@@ -10,14 +10,21 @@ import {
   Div3,
   NavLink,
   SocialIcons,
-  Span
+  Span,
 } from "./HeaderStyles";
 
 const Header = () => (
   <Container>
     <Div1>
       <Link href="/">
-        <a style={{ display: "flex", alignItems: "center", color: "white", marginBottom: '20px' }}>
+        <a
+          style={{
+            display: "flex",
+            alignItems: "center",
+            color: "white",
+            marginBottom: "20px",
+          }}
+        >
           <DiCssdeck size="3rem" />
           <Span>Portfolio</Span>
         </a>
@@ -25,27 +32,35 @@ const Header = () => (
     </Div1>
     <Div2>
       <li>
-        <Link href='#projects'>
+        <Link href="#projects">
           <NavLink>Projects</NavLink>
         </Link>
       </li>
       <li>
-        <Link href='#tech'>
+        <Link href="#tech">
           <NavLink>Technologies</NavLink>
         </Link>
       </li>
       <li>
-        <Link href='#about'>
-          <NavLink>About</NavLink>
+        <Link href="#contact">
+          <NavLink>Contact</NavLink>
         </Link>
       </li>
     </Div2>
     <Div3>
-      <SocialIcons href='https://github.com/LoganSorensen'>
-        <AiFillGithub size='3rem' />
+      <SocialIcons
+        href="https://github.com/LoganSorensen"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <AiFillGithub size="3rem" />
       </SocialIcons>
-      <SocialIcons href='https://www.linkedin.com/in/logan-sorensen/'>
-        <AiFillLinkedin size='3rem' />
+      <SocialIcons
+        href="https://www.linkedin.com/in/logan-sorensen/"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <AiFillLinkedin size="3rem" />
       </SocialIcons>
     </Div3>
   </Container>

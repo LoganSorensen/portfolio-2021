@@ -16,12 +16,12 @@ import {
 
 const Footer = () => {
   return (
-    <FooterWrapper>
+    <FooterWrapper id="contact">
       <LinkList>
-        <LinkColumn>
+        {/* <LinkColumn>
           <LinkTitle>Call</LinkTitle>
           <LinkItem href="tel:111-111-1111">111-111-1111</LinkItem>
-        </LinkColumn>
+        </LinkColumn> */}
         <LinkColumn>
           <LinkTitle>Email</LinkTitle>
           <LinkItem href="mailto:loganmsorensen@gmail.com">
@@ -30,14 +30,19 @@ const Footer = () => {
         </LinkColumn>
       </LinkList>
       <SocialIconsContainer>
-        <CompanyContainer>
-          <Slogan>Innovating one project at a time</Slogan>
-        </CompanyContainer>
         <SocialContainer>
-          <SocialIcons href="https://github.com/LoganSorensen">
+          <SocialIcons
+            href="https://github.com/LoganSorensen"
+            target="_blank"
+            rel="noreferrer"
+          >
             <AiFillGithub size="3rem" />
           </SocialIcons>
-          <SocialIcons href="https://www.linkedin.com/in/logan-sorensen/">
+          <SocialIcons
+            href="https://www.linkedin.com/in/logan-sorensen/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <AiFillLinkedin size="3rem" />
           </SocialIcons>
         </SocialContainer>
