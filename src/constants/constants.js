@@ -13,7 +13,7 @@ export const projects = [
   {
     title: "React Shopping List",
     description: "",
-    image: "/images/shopping.png",
+    image: "/shopping.png",
     tags: ["React", "MongoDB", "Node", "Express"],
     code: "https://github.com/LoganSorensen/shopping-list-fe",
     backend: "https://github.com/LoganSorensen/shopping-list-be",

@@ -16,9 +16,7 @@ const Hero = (props) => (
         I'm a Fullstack Web Developer
       </SectionTitle>
       <SectionText>Value propostion</SectionText>
-      <Button
-        onClick={() => (window.location = "#projects")}
-      >
+      <Button onClick={() => (window.location = "#projects")}>
         Check out my work
       </Button>
     </LeftSection>
