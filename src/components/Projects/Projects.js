@@ -25,38 +25,41 @@ const Projects = () => (
     <SectionDivider />
     <SectionTitle main>Projects</SectionTitle>
     <GridContainer>
-      {projects.map(({ id, image, title, description, tags, code, demo, backend }) => (
-        <BlogCard key={id}>
-          <Img src={image} />
-          <TitleContent>
-            <HeaderThree title>{title}</HeaderThree>
-            <Hr />
-          </TitleContent>
-          <CardInfo>{description}</CardInfo>
-          <div>
-            <TitleContent>Stack</TitleContent>
-            <TagList>
-              {tags.map((tag, i) => (
-                <Tag key={i}>{tag}</Tag>
-              ))}
-            </TagList>
-          </div>
-          <UtilityList>
-            <ExternalLinks target="_blank" href={code}>
-              Code
-            </ExternalLinks>
-            {backend && (
-
-              <ExternalLinks target="_blank" href={backend}>
-              Backend Code
-            </ExternalLinks>
+      {projects.map(
+        ({ id, image, title, description, tags, code, demo, backend }) => (
+          <BlogCard key={id}>
+            <Img src={image} />
+            <TitleContent>
+              <HeaderThree title>{title}</HeaderThree>
+              <Hr />
+            </TitleContent>
+            <CardInfo>{description}</CardInfo>
+            <div>
+              <TitleContent>Stack</TitleContent>
+              <TagList>
+                {tags.map((tag, i) => (
+                  <Tag key={i}>{tag}</Tag>
+                ))}
+              </TagList>
+            </div>
+            <UtilityList>
+              {code && (
+                <ExternalLinks target="_blank" href={code}>
+                  Code
+                </ExternalLinks>
               )}
-            <ExternalLinks target="_blank" href={demo}>
-              Demo
-            </ExternalLinks>
-          </UtilityList>
-        </BlogCard>
-      ))}
+              {backend && (
+                <ExternalLinks target="_blank" href={backend}>
+                  Backend Code
+                </ExternalLinks>
+              )}
+              <ExternalLinks target="_blank" href={demo}>
+                Demo
+              </ExternalLinks>
+            </UtilityList>
+          </BlogCard>
+        )
+      )}
     </GridContainer>
   </Section>
 );
