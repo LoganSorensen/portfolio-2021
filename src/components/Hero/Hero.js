@@ -17,7 +17,7 @@ const Hero = (props) => (
       </SectionTitle>
       <SectionText>Value propostion</SectionText>
       <Button
-        onClick={() => (window.location = "http://localhost:3000#projects")}
+        onClick={() => (window.location = "#projects")}
       >
         Check out my work
       </Button>
