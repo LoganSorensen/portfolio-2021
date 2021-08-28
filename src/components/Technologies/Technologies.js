@@ -19,15 +19,15 @@ const Technologies = () => (
     <SectionDivider />
     <br />
     <SectionTitle>Technologies</SectionTitle>
-    <SectionText>Talk about the stack</SectionText>
+    <SectionText></SectionText>
     <List>
       <ListItem>
         <DiReact size="3rem" />
         <ListContainer>
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
-            Experience with <br />
-            React.js
+            I primarily use React when developing for the front-end, but I also
+            have experience with vanilla JS DOM manipulation and events.
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -36,18 +36,20 @@ const Technologies = () => (
         <ListContainer>
           <ListTitle>Back-End</ListTitle>
           <ListParagraph>
-            Experience with <br />
-            Node.js and Databases
+            My back-end work is done using Node.js and Express, and I've built
+            both relational and non-relational databses using SQLite and
+            MongoDB.
           </ListParagraph>
         </ListContainer>
       </ListItem>
       <ListItem>
         <DiCss3 size="3rem" />
         <ListContainer>
-          <ListTitle>UI/UX</ListTitle>
+          <ListTitle>Design</ListTitle>
           <ListParagraph>
-            Experience with <br />
-            Figma
+            I have solid experience converting designs into actual applications
+            and using CSS preprocessors, and have some familiarity with UI
+            libraries like Bootstrap.
           </ListParagraph>
         </ListContainer>
       </ListItem>

@@ -26,7 +26,7 @@ const Header = () => (
           }}
         >
           <DiCssdeck size="3rem" />
-          <Span>Portfolio</Span>
+          <Span>logansorensen.dev</Span>
         </a>
       </Link>
     </Div1>
